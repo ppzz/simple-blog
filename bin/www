@@ -1,0 +1,9 @@
+#!/usr/bin/env node
+var debug = require('debug')('SimpleBlog'); //引入debug模块，打印调试日志
+var app = require('../app');  //引入app模块
+
+app.set('port', process.env.PORT || 3000);  //设置端口
+
+var server = app.listen(app.get('port'), function() {
+  debug('Express server listening on port ' + server.address().port);
+}); //调用app的 listen 方法开始监听一个端口，回调函数输出监听的端口号。
