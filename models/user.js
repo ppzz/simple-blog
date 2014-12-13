@@ -57,7 +57,7 @@ User.get=function(name,callback){
         }
 
         //读取user集合
-        db.collection('user',function(error,collection){
+        db.collection('express',function(error,collection){
             if(error){
                 mongodb.close();
                 return callback(error);
