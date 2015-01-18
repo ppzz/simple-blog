@@ -19,5 +19,3 @@
     "serve-favicon": "~2.1.3"
   }
 }
-// npm install connect-flash --save
-//可以动态的添加模块，默认会添加最新的

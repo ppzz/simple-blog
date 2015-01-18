@@ -2,7 +2,6 @@ var crypto=require('crypto');
 var User=require('../models/user.js');
 var Post=require('../models/post.js');
 
-
 /* GET home page. */
 function router(app){
   app.get('/',function(request,response){
